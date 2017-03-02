@@ -1,4 +1,4 @@
-/*! nouislider - 9.2.0 - 2017-01-11 10:35:34 */
+/*! nouislider - 9.2.0 - 2017-03-02 16:13:46 */
 
 (function (factory) {
 
@@ -1850,7 +1850,7 @@ function closure ( target, options, originalOptions ){
 		}
 
 		scope_Connects[index].style[options.style] = toPct(l);
-		scope_Connects[index].style[options.styleOposite] = toPct(100 - h);
+		scope_Connects[index].style["clip-path"] = "inset(0px "+(100 - h)+"% 0px 0px)";
 	}
 
 	// ...

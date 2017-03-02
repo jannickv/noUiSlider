@@ -132,7 +132,7 @@
 		}
 
 		scope_Connects[index].style[options.style] = toPct(l);
-		scope_Connects[index].style[options.styleOposite] = toPct(100 - h);
+		scope_Connects[index].style["clip-path"] = "inset(0px "+(100 - h)+"% 0px 0px)";
 	}
 
 	// ...
